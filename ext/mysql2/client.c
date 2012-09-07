@@ -564,7 +564,7 @@ static VALUE rb_mysql_client_real_escape(VALUE self, VALUE str) {
 #endif
   GET_CLIENT(self);
 
-  REQUIRE_CONNECTED(wrapper);
+  //REQUIRE_CONNECTED(wrapper);
   Check_Type(str, T_STRING);
 #ifdef HAVE_RUBY_ENCODING_H
   default_internal_enc = rb_default_internal_encoding();
